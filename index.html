@@ -6,16 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>New Weather App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8778d7a519.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="top-container">
       <div class="title-and-search">
         <h1>Get Weather</h1>
-        <input type="text" />
+        <div class="input">
+          <input type="text" class="search" placeholder="Search" /><i
+            class="fa-solid fa-magnifying-glass icon"
+          ></i>
+        </div>
       </div>
       <div class="current-weather-container">
-        <h2>Current Location</h2>
+        <div>
+          <h1>Current Location</h1>
+        </div>
+        <div class="container">
+          <div class="current-weather">
+            <h2>21 degrees</h2>
+            <p class="weather-desc">Partly Cloudy</p>
+            <p class="weather-feels-like">21 / 9 Feels like 21</p>
+            <p class="date">Fri, 13:10</p>
+          </div>
+          <div class="detailed-weather">
+            <p class="wind">Wind: 50km/h</p>
+            <p class="humidity">Humidity: 70</p>
+            <p class="sunrise">Sunrise at: 07:30</p>
+            <p class="sunset">Sunset at: 20:00</p>
+          </div>
+        </div>
       </div>
     </div>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
