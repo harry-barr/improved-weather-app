@@ -13,33 +13,112 @@
   </head>
   <body>
     <div class="top-container">
-      <div class="title-and-search">
-        <h1>Get Weather</h1>
-        <div class="input">
-          <input type="text" class="search" placeholder="Search" /><i
-            class="fa-solid fa-magnifying-glass icon"
-          ></i>
-        </div>
-      </div>
-      <div class="current-weather-container">
-        <div>
-          <h1>Current Location</h1>
-        </div>
-        <div class="container">
-          <div class="current-weather">
-            <h2>21 degrees</h2>
-            <p class="weather-desc">Partly Cloudy</p>
-            <p class="weather-feels-like">21 / 9 Feels like 21</p>
-            <p class="date">Fri, 13:10</p>
+      <div>
+        <div class="left-container">
+          <div class="title">
+            <h1>Get Weather</h1>
           </div>
-          <div class="detailed-weather">
-            <p class="wind">Wind: 50km/h</p>
-            <p class="humidity">Humidity: 70</p>
-            <p class="sunrise">Sunrise at: 07:30</p>
-            <p class="sunset">Sunset at: 20:00</p>
+          <div class="input">
+            <input type="text" class="search" placeholder="Search" /><button
+              type="button"
+              class="search-btn"
+            >
+              <i class="fa-solid fa-magnifying-glass icon"></i>
+            </button>
           </div>
         </div>
+        <div class="forecast-container">
+          <div class="forecast-hour">
+            <p class="hour">12:00</p>
+            <p class="temperature">°C</p>
+            <p class="rain-chance">20% <i class="fa-solid fa-droplet"></i></p>
+          </div>
+
+          <div class="forecast-hour">
+            <div class="hour">13:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              10% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+          <div class="forecast-hour">
+            <div class="hour">14:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              20% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+
+          <div class="forecast-hour">
+            <div class="hour">15:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              10% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+          <div class="forecast-hour">
+            <div class="hour">16:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              20% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+
+          <div class="forecast-hour">
+            <div class="hour">17:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              10% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+          <div class="forecast-hour">
+            <div class="hour">18:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              20% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+
+          <div class="forecast-hour">
+            <div class="hour">19:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              10% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+          <div class="forecast-hour">
+            <div class="hour">20:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              20% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+
+          <div class="forecast-hour">
+            <div class="hour">21:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              10% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+          <div class="forecast-hour">
+            <div class="hour">22:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              20% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+
+          <div class="forecast-hour">
+            <div class="hour">23:00</div>
+            <div class="temperature">°C</div>
+            <div class="rain-chance">
+              10% <i class="fa-solid fa-droplet"></i>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="current-weather-container"></div>
     </div>
     <script src="script.js" type="module"></script>
   </body>

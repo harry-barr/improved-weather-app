@@ -14,11 +14,11 @@ body {
   gap: 170px;
   flex-wrap: wrap;
 }
-.title-and-search {
+.left-container {
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 10px;
 }
-.top-container .title-and-search h1 {
+.top-container .left-container h1 {
   font-size: 3rem;
 }
 .input {
@@ -29,7 +29,7 @@ body {
 
 .search {
   width: 100%;
-  padding-right: 35px;
+  padding-right: 35px; /* Add space for the button */
   padding-left: 10px;
   height: 35px;
   box-sizing: border-box;
@@ -39,48 +39,114 @@ body {
   font-weight: bold;
 }
 
-.icon {
+.search-btn {
   position: absolute;
-  right: 10px;
-  top: 65%;
+  right: 0;
+  top: 60%;
   transform: translateY(-50%);
+  height: 100%;
+  width: 35px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.icon {
   color: #888;
   font-size: 16px;
-  cursor: pointer;
 }
 
 .current-weather-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 20px;
+  margin-top: 20px;
 }
 .current-weather-container h1 {
-  font-size: 3.5rem;
+  font-size: 3.8rem;
 }
 .current-weather {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   font-weight: bold;
 }
-.current-weather h2 {
-  font-size: 2rem;
-}
-.current-weather p {
-  font-size: 1rem;
-}
+
 .container {
   display: flex;
   flex-direction: row;
-  gap: 120px;
+  gap: 80px;
+  font-size: 2rem;
 }
 .detailed-weather {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
   margin-top: 68px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
+}
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-left: 20px;
+  border: 3px solid black;
+  position: relative;
+  padding: 10px;
+  color: black;
+  overflow: hidden;
+}
+
+.forecast-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #000000, #d9dce9);
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+.forecast-hour {
+  background: transparent;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 3px;
+  border: 3px solid black;
+}
+
+.hour {
+  font-size: 1em;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.temperature {
+  font-size: 1.5em;
+  color: black;
+  margin-bottom: 5px;
+  font-weight: bolder;
+}
+
+.rain-chance {
+  font-size: 1em;
+  color: black;
+  font-weight: bolder;
+}
+
+.fa-droplet {
+  color: blue;
 }
